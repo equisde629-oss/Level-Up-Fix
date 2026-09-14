@@ -1,0 +1,711 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #ffffff;
+
+    color: #111111;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.header {
+    width: 100%;
+
+    padding: 22px 8%;
+
+    background-color: #000000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+/* LOGO */
+
+.logo {
+    color: #ffffff;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.logo span {
+    color: #b43232;
+}
+
+
+/* MENÚ */
+
+.menu { 
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.menu a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.menu a:hover {
+    color: #aaaaaa;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.inicio {
+    min-height: 500px;
+
+    background-color: #f2f2f2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+
+.inicio-contenido {
+    max-width: 700px;
+}
+
+
+.pequeno-titulo {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+
+.inicio h1 {
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+
+.inicio p {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    color: #555555;
+}
+
+
+/* =========================
+   SECCIÓN CELULARES
+========================= */
+
+.celulares {
+    padding: 90px 8%;
+}
+
+
+.titulo-seccion {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+
+.titulo-seccion p {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+
+
+.titulo-seccion h2 {
+    font-size: 38px;
+}
+
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    gap: 60px;
+}
+
+
+/* TARJETA */
+
+.producto {
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+
+    display: grid;
+
+    grid-template-columns: 45% 55%;
+
+    min-height: 350px;
+
+    transition: 0.5s;
+
+    cursor: pointer;
+}
+
+
+.producto:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.producto:focus-visible {
+    outline: 3px solid #111111;
+    outline-offset: 4px;
+}
+
+
+/* IMAGEN */
+
+.imagen-producto {
+    background-color: #f5f5f5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+}
+
+
+.imagen-producto img {
+    width: 150%;
+
+    height: 270px;
+
+    object-fit: contain;
+}
+
+
+/* INFORMACIÓN */
+
+.informacion {
+    padding: 30px;
+}
+
+
+.marca {
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    color: #777777;
+
+    margin-bottom: 10px;
+}
+
+
+.informacion h3 {
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+
+.precio {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+/* CARACTERÍSTICAS */
+
+.caracteristicas {
+    border-top: 1px solid #dddddd;
+
+    padding-top: 15px;
+}
+
+
+.caracteristicas p {
+    font-size: 14px;
+
+    color: #555555;
+
+    margin-bottom: 10px;
+}
+
+
+.caracteristicas strong {
+    color: #111111;
+}
+
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.nosotros {
+    background-color: #000000;
+
+    color: #ffffff;
+
+    padding: 90px 8%;
+}
+
+
+.nosotros > div {
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.nosotros .pequeno-titulo {
+    color: #aaaaaa;
+}
+
+
+.nosotros h2 {
+    font-size: 40px;
+
+    margin-bottom: 25px;
+}
+
+
+.nosotros p:not(.pequeno-titulo) {
+    color: #cccccc;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #111111;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+footer .logo {
+    margin-bottom: 15px;
+}
+
+
+footer p {
+    color: #aaaaaa;
+
+    margin-bottom: 10px;
+}
+
+
+footer .copyright {
+    font-size: 12px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 850px) {
+
+    .categoria {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   TABLETS Y CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+
+    .menu {
+        gap: 18px;
+    }
+
+
+    .inicio {
+        min-height: 400px;
+    }
+
+
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+
+    .celulares {
+        padding: 60px 5%;
+    }
+
+
+    .titulo-seccion h2 {
+        font-size: 30px;
+    }
+
+
+    .producto {
+        grid-template-columns: 1fr;
+    }
+
+
+    .imagen-producto img {
+        height: 250px;
+    }
+
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    background-color: #f2f2f2;
+
+    padding: 90px 8%;
+}
+
+
+.contacto .titulo-seccion {
+    max-width: 700px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 50px;
+}
+
+
+.texto-contacto {
+    color: #555555;
+
+    line-height: 1.6;
+
+    margin-top: 15px;
+}
+
+
+/* TARJETAS DE CONTACTO */
+
+.contactos {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.contacto-item {
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+
+.contacto-item h3 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+.contacto-item p {
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 10px;
+}
+
+
+.contacto-item a {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: #111111;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #111111;
+
+    padding-bottom: 3px;
+}
+
+
+.contacto-item a:hover {
+    color: #666666;
+
+    border-color: #666666;
+}
+
+
+/* CONTACTO EN CELULAR */
+
+@media (max-width: 600px) {
+
+    .contactos {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   CATEGORÍAS DE CELULARES
+========================= */
+
+.categoria {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+
+    gap: 20px;
+}
+
+
+
+.titulo-categoria {
+    grid-column: 1 / -1;
+
+    margin-bottom: 30px;
+
+    border-left: 4px solid #000000;
+
+    padding-left: 18px;
+}
+
+
+.titulo-categoria h3 {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+
+.titulo-categoria p {
+    color: #666666;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   VENTANA DE DETALLES
+========================= */
+
+.modal-detalles {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.modal-detalles.visible {
+    display: flex;
+}
+
+.modal-contenido {
+    position: relative;
+    width: min(760px, 100%);
+    max-height: 85vh;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.modal-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f5f5f5;
+}
+
+.modal-imagen img {
+    width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+}
+
+.modal-info {
+    padding: 38px;
+}
+
+.modal-info h2 {
+    margin-bottom: 12px;
+    font-size: 30px;
+}
+
+.modal-info h3 {
+    margin: 24px 0 12px;
+    font-size: 17px;
+}
+
+#modal-caracteristicas {
+    padding: 14px 0 4px;
+    list-style: none;
+    border-top: 1px solid #dddddd;
+}
+
+#modal-caracteristicas p {
+    margin-bottom: 10px;
+    color: #555555;
+    font-size: 14px;
+}
+
+.detalle-compra {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+.detalle-compra p {
+    margin-top: 8px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    z-index: 1;
+    border: 0;
+    background: transparent;
+    color: #111111;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .modal-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-imagen {
+        padding: 20px;
+    }
+
+    .modal-imagen img {
+        max-height: 190px;
+    }
+
+    .modal-info {
+        padding: 28px;
+    }
+}
+
+
